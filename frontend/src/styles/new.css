@@ -1,0 +1,21 @@
+.newcomp{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 50%;
+    justify-content: space-between;
+    padding: 10px;
+}
