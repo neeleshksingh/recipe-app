@@ -9,7 +9,7 @@ const Login = () =>{
     const handleLogin = async() =>{
         try{
             if(data.email && data.password){
-                const user = await axios.post('http://localhost:5412/login', data)
+                const user = await axios.post('https://recipe-yzmc.onrender.com/login', data)
                 if(user.data.token){
                     localStorage.setItem("jwt", data.token)
                     localStorage.setItem("user", JSON.stringify(user.data.user))

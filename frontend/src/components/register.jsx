@@ -17,7 +17,7 @@ const Register = () =>{
         const verify = val.password.length !== 0 && val.email.length !== 0 && val.confirmpassword.length !== 0
         if(val.password === val.confirmpassword && verify){
         try{
-            const data = await axios.post('http://localhost:5412/register', val)
+            const data = await axios.post('https://recipe-yzmc.onrender.com/register', val)
             if(data.data.status === "signup failed"){
                 alert(data.data.error)
             } else{

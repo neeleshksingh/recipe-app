@@ -30,7 +30,7 @@ const New = () =>{
           }
       
           const response = await axios.post(
-            `http://localhost:5412/recipe/${user}`,
+            `https://recipe-yzmc.onrender.com/recipe/${user}`,
             {
               title,
               author,

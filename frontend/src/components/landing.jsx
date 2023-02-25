@@ -24,7 +24,7 @@ const Landing =()=>{
             return
         }
         try{
-            const data = await axios.get(`http://localhost:5412/recipe/${user}`)
+            const data = await axios.get(`https://recipe-yzmc.onrender.com/recipe/${user}`)
             if(data){
                 setError('')
                 setArr(data.data.data)
